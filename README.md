@@ -142,7 +142,7 @@ On the PASCAL VOC 2012 val and test sets.
 | Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
 
 
-> MS COCO 2014 dataset
+> MS COCO 2014 models
 
 |  | mIoU |  Weights  |
 | :-----: | :----: | :----: |
