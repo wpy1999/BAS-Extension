@@ -92,7 +92,6 @@ cd BAS-Extension
 * CUB ([http://www.vision.caltech.edu/visipedia/CUB-200-2011.html](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html))
 * ILSVRC ([https://www.image-net.org/challenges/LSVRC/](https://www.image-net.org/challenges/LSVRC/))
 * PASCAL ([http://host.robots.ox.ac.uk/pascal/VOC/](http://host.robots.ox.ac.uk/pascal/VOC/))
-* COCO ([https://cocodataset.org/#download](https://cocodataset.org/#download))
 
 
 ### WSOL task <a name="63"></a> 
@@ -183,13 +182,6 @@ On the PASCAL VOC 2012 val and test sets.
 |  | Val | Test |  Weights  |
 | :-----: | :----: | :----: | :----: |
 | Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1CzQFc04AAn8xNcTnRBV-ZkriTlbkEAKa/view?usp=sharing) |
-
-
-> MS COCO 2014 models
-
-|  | mIoU |  Weights  |
-| :-----: | :----: | :----: |
-| Ours | 45.1 | TODO |
 
 
 ## ✉️ Statement <a name="8"></a> 
