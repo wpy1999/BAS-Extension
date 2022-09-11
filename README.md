@@ -125,6 +125,9 @@ python count_pxap.py
 ```
 
 ### WSSS task <a name="64"></a> 
+```
+cd WSSS
+```
 
 > Training PASCAL <a name="63"></a> 
 
