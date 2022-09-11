@@ -45,6 +45,14 @@ Weakly supervised object localization (WSOL) aims to localize objects using only
 
 **Motivation.** (A) The entropy value of CE loss w.r.t foreground mask and foreground activation value w.r.t foreground mask. (B) Experimental procedure and related definitions. (C) The results with statistical significance. Implementation details of the experiment and further results are available in Section 3.5.
 
+<p align="center">
+    <img src="./Img/motivation1.png" width="550"/> <br />
+    <em> 
+    </em>
+</p>
+
+**Motivation.** Applying BAS to weakly supervised semantic segmentation task.
+
 
 ## 📖 Method <a name="4"></a> 
 
@@ -56,6 +64,13 @@ Weakly supervised object localization (WSOL) aims to localize objects using only
 
 **The architecture of the proposed BAS.** The architecture of the proposed BAS. In the training phase, the class-specific foreground prediction map Mf and the coupled background prediction map Mb are obtained by the generator according to the ground-truth class (GT), and then fed into the Activation Map Constraint module together with the feature map F.
 
+<p align="center">
+    <img src="./Img/networkWSSS.png" width="500"/> <br />
+    <em> 
+    </em>
+</p>
+
+**Applying BAS to weakly supervised semantic segmentation task..** 
 
 ## 📃 Requirements <a name="5"></a> 
   - python 3.6.10 
