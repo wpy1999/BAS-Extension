@@ -29,7 +29,7 @@ PyTorch implementation of ''Background Activation Suppression for Weakly Supervi
 
     Authors: Wei Zhai*, Pingyu Wu*, Kai Zhu, Yang Cao, Feng Wu, Zheng-Jun Zha
 
-    Institution: University of Science and Technology of China (USTC)
+    Institution: University of Science and Technology of China (USTC) \& Institute of Artificial Intelligence, Hefei Comprehensive National Science Center
 
 ## 💡 Abstract <a name="2"></a> 
 Weakly supervised object localization (WSOL) aims to localize objects using only image-level labels. Recently a new paradigm has emerged by generating a foreground prediction map (FPM) to achieve localization task. Existing FPM-based methods use cross-entropy (CE) to evaluate the foreground prediction map and to guide the learning of generator. We argue for using activation value to achieve more efficient learning. It is based on the experimental observation that, for a trained network, CE converges to zero when the foreground mask covers only part of the object region. While activation value increases until the mask expands to the object boundary, which indicates that more object areas can be learned by using activation value. In this paper, we propose a Background Activation Suppression (BAS) method. Specifically, an Activation Map Constraint (AMC) module is designed to facilitate the learning of generator by suppressing the background activation value. Meanwhile, by using foreground region guidance and area constraint, BAS can learn the whole region of the object. In the inference phase, we consider the prediction maps of different categories together to obtain the final localization results. Extensive experiments show that BAS achieves significant and consistent improvement over the baseline methods on the CUB-200-2011 and ILSVRC datasets. In addition, our method also achieves state-of-the-art weakly supervised semantic segmentation performance on the PASCAL VOC 2012 and MS COCO 2014 datasets. Code and models are available at https://github.com/wpy1999/BAS-Extension.
@@ -92,6 +92,7 @@ cd BAS-Extension
 * CUB ([http://www.vision.caltech.edu/visipedia/CUB-200-2011.html](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html))
 * ILSVRC ([https://www.image-net.org/challenges/LSVRC/](https://www.image-net.org/challenges/LSVRC/))
 * PASCAL ([http://host.robots.ox.ac.uk/pascal/VOC/](http://host.robots.ox.ac.uk/pascal/VOC/))
+* COCO ([https://cocodataset.org/#download](https://cocodataset.org/#download))
 
 
 ### WSOL task <a name="63"></a> 
@@ -125,9 +126,6 @@ python count_pxap.py
 ```
 
 ### WSSS task <a name="64"></a> 
-```
-cd WSSS
-```
 
 > Training PASCAL <a name="63"></a> 
 
@@ -185,6 +183,13 @@ On the PASCAL VOC 2012 val and test sets.
 |  | Val | Test |  Weights  |
 | :-----: | :----: | :----: | :----: |
 | Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1CzQFc04AAn8xNcTnRBV-ZkriTlbkEAKa/view?usp=sharing) |
+
+
+> MS COCO 2014 models
+
+|  | mIoU |  Weights  |
+| :-----: | :----: | :----: |
+| Ours | 45.1 | TODO |
 
 
 ## ✉️ Statement <a name="8"></a> 
