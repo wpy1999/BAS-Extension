@@ -69,7 +69,7 @@ class opts(object):
         self.parser.add_argument('--arch', type=str, help="[vgg, resnet, inception, mobilenet]",
                                     default='mobilenet')           
         ##  GPU'
-        self.parser.add_argument('--gpu', type=str, default='5')
+        self.parser.add_argument('--gpu', type=str, default='0')
         
     def parse(self):
         opt = self.parser.parse_args()
