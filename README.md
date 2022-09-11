@@ -83,8 +83,8 @@ Weakly supervised object localization (WSOL) aims to localize objects using only
 ### Start <a name="61"></a> 
 
 ```bash  
-git clone https://github.com/wpy1999/BAS.git
-cd BAS
+git clone https://github.com/wpy1999/BAS-Extension.git
+cd BAS-Extension
 ```
 
 ### Download Datasets <a name="62"></a> 
@@ -97,64 +97,92 @@ cd BAS
 
 ### WSOL task <a name="63"></a> 
 
-> Training <a name="63"></a> 
+```
+cd WSOL
+```
+
+> Training CUB/ OpenImages (with single gpu) <a name="63"></a> 
 
 ```
 python train.py --arch ${Backbone}
 ```
 
-> Inference <a name="64"></a> 
+> Training ILSVRC/ CUB/ OpenImages (with multiple gpus) <a name="63"></a> 
 
-To test the CUB models, you can download the trained models from Model Zoo, then run `BAS_inference.py`:
-```bash  
-cd CUB
-python BAS_inference.py --arch ${Backbone}
+```
+CUDA_VISIBLE_DEVICES="0,1,2,3" python -m torch.distributed.launch --nproc_per_node 4 train_ILSVRC.py
 ```
 
-To test the ILSVRC models, you can download the trained models from Model Zoo, then run `BAS_inference.py`:
+> Inference <a name="64"></a> 
+
+To test the localization accuracy on CUB/ ILSVRC, you can download the trained models from Model Zoo, then run `evaluator.py`:
 ```bash  
-cd ILSVRC
-python BAS_inference.py --arch ${Backbone}
+python evaluator.py  
+```
+
+To test the segmentation accuracy on CUB/ OpenImages, you can download the trained models from Model Zoo, then run `count_pxap.py`:
+```bash  
+python count_pxap.py 
 ```
 
 ### WSSS task <a name="64"></a> 
 
-xxx
+> Training PASCAL <a name="63"></a> 
+
+```
+CUDA_VISIBLE_DEVICES="0,1,2,3" python -m torch.distributed.launch --nproc_per_node 4 train_bas.py
+```
+
+> Inference <a name="64"></a> 
+
+To test the segmentation accuracy on PASCAL, you can download the trained models from Model Zoo, then run `run_sample.py`:
+```bash  
+python run_sample.py  
+```
 
 ## 📊⛺ Experimental Results and Model Zoo <a name="7"></a> 
+You can download all the trained models here ([WSOL]( https://drive.google.com/drive/folders/1H8YueyBLbfVJQk8pWil-yPVejVvCe58h?usp=sharing), [WSSS]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing))
+
+ or download any one individually as follows:
 
 > CUB models
 
 |  | Top1 Loc | Top5 Loc | GT Known |  Weights  |
 | :-----: | :----: | :----: | :----: | :----: |
-| VGG | 70.90 | 85.36 | 91.04 | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
-| MobileNet | 70.54 | 86.71 | 93.04 | [Model]( https://drive.google.com/file/d/1_i1XEO9bSlietnrgFnVoBlOaRGhPnPh2/view?usp=sharing) |
-| ResNet | 76.75 | 90.04 | 95.41 | [Model](https://drive.google.com/file/d/13qPalet2zTRosFz9PJOP1GrLYyEb4NNF/view?usp=sharing) |
-| Inception | 72.09 | 88.11 | 94.63 | [Model](https://drive.google.com/file/d/1hZOjU5kqpdZZK1WO-bi5zICPpFj6Bi7d/view?usp=sharing) |
+| VGG | 70.90 | 85.36 | 91.04 | [Model]( https://drive.google.com/file/d/1-1SJTaUsbSRgpV_XuBeKwfefh9cc_I8r/view?usp=sharing) |
+| MobileNet | 70.54 | 86.71 | 93.04 | [Model]( https://drive.google.com/file/d/1y6U7Hhxvq8IqoRLOmnnuFFE7UUbyPvIK/view?usp=sharing) |
+| ResNet | 76.75 | 90.04 | 95.41 | [Model](https://drive.google.com/file/d/1M9rSe6nwGUMqUFz5195jpA7ddnk3EjTl/view?usp=sharing) |
+| Inception | 72.09 | 88.11 | 94.63 | [Model](https://drive.google.com/file/d/16UUx2t6Ga7f0TZZVm7e5awUOQmdE_fQj/view?usp=sharing) |
 
 > ILSVRC models
 
 |  | Top1 Loc | Top5 Loc | GT Known |  Weights  |
 | :-----: | :----: | :----: | :----: | :----: |
-| VGG | 52.94 | 65.38 | 69.66 | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
-| MobileNet | 53.05 | 66.68 | 72.03 | [Model]( https://drive.google.com/file/d/1_i1XEO9bSlietnrgFnVoBlOaRGhPnPh2/view?usp=sharing) |
-| ResNet | 57.46 | 68.57 | 72.00 | [Model](https://drive.google.com/file/d/13qPalet2zTRosFz9PJOP1GrLYyEb4NNF/view?usp=sharing) |
-| Inception | 58.50 | 69.03 | 72.07 | [Model](https://drive.google.com/file/d/1hZOjU5kqpdZZK1WO-bi5zICPpFj6Bi7d/view?usp=sharing) |
+| VGG | 52.94 | 65.38 | 69.66 | [Model]( https://drive.google.com/file/d/1lqdTmRS89vaYtld4M86LD3pzF_-7KRu8/view?usp=sharing) |
+| MobileNet | 53.05 | 66.68 | 72.03 | [Model]( https://drive.google.com/file/d/1S8Ws-vmyxInlNuRD-S7ivMYbluo8M-DL/view?usp=sharing) |
+| ResNet | 57.46 | 68.57 | 72.00 | [Model](https://drive.google.com/file/d/1CpeG6YTcU9Zj8_SbP0cRiPINztFzWC6z/view?usp=sharing) |
+| Inception | 58.50 | 69.03 | 72.07 | [Model](https://drive.google.com/file/d/1TwcP2GNSo9Lv7V9fAb-8cieQhYJ1lhll/view?usp=sharing) |
+
+> OpenImages
+
+|  | PIoU | PxAP | Weights  |
+| :-----: | :----: | :----: | :----: |
+| ResNet | 50.72 | 66.86 | [Model]( https://drive.google.com/file/d/1PxDUkAPyWSL6zfez981SxODMSrESM5fh/view?usp=sharing) |
 
 > PASCAL VOC models
 
 On the PASCAL VOC 2012 training set. The results on the other baseline methods can be obtained in the same way.
 
-|  | Seed | Mask |  Weights  |
-| :-----: | :----: | :----: | :----: |
-| Our | 57.7 | - | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
-| Our + IRN | 58.2 | 71.1 | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
+|  | Seed |  Weights  | Mask |  Weights  |
+| :-----: | :----: | :----: | :----: | :----: |
+| Our | 57.7 | [Model]( https://drive.google.com/file/d/1VkjmAFGd0cJxHMjlPE-Qjt-mRpk6xuYh/view?usp=sharing) | 
+| Our + IRN | 58.2 | [Model]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing) | 71.1 |[Model]( https://drive.google.com/file/d/1QEg9Opb6JpE0rjhJMmt0YLozO20kP1Oc/view?usp=sharing)|
 
 On the PASCAL VOC 2012 val and test sets.
 
 |  | Val | Test |  Weights  |
 | :-----: | :----: | :----: | :----: |
-| Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1c3okqQWJNEv-riAuEKzm9pFAvMtm6ISk/view?usp=sharing) |
+| Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1CzQFc04AAn8xNcTnRBV-ZkriTlbkEAKa/view?usp=sharing) |
 
 
 > MS COCO 2014 models
