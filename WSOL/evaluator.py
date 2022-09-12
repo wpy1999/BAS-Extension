@@ -140,7 +140,7 @@ if __name__ == '__main__':
     parser.add_argument('--resize_size', type=int, default=256) 
     ## save
     parser.add_argument('--evaluate', type=bool, default=True)
-    parser.add_argument('--tencrop', type=bool, default=False)
+    parser.add_argument('--tencrop', type=bool, default=True)
     parser.add_argument('--save_img_flag', type=bool, default=False)
     parser.add_argument('--save_box_flag', type=bool, default=False)
     parser.add_argument('--save_img_dir', type=str, default='save_img')
