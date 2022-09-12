@@ -36,7 +36,7 @@ class ImageDataset(data.Dataset):
     def __init__(self, args ,phase=None):
         args.num_classes = 200
         self.args =args
-        self.root = '/media/etc/wpy/BAS_cub/Data/' + args.root
+        self.root = 'Data/' + args.root
         self.test_txt_path = self.root + '/' + 'test_list.txt'
         self.test_gt_path = self.root + '/' + 'test_bounding_box.txt'
         self.crop_size = args.crop_size 
