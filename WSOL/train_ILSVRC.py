@@ -85,7 +85,7 @@ sys.stdout = Logger(args.save_path + '/' + args.root + '/' + args.arch +  '/' + 
 sys.stdout.log.flush()
 
 ##  save_code
-save_file = ['train.py', 'train_ILSVRC.py', 'evaluator.py', 'count_pxap.py', 'show_loc.py']
+save_file = ['train.py', 'train_ILSVRC.py', 'evaluator.py', 'count_pxap.py']
 for file_name in save_file:
     shutil.copyfile(file_name, args.save_path + '/' + args.root + '/' + args.arch + '/' + args.log_code_dir + '/' + file_name)
 save_dir = ['Model', 'utils', 'DataLoader']
