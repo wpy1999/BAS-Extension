@@ -43,7 +43,7 @@ Weakly supervised object localization (WSOL) aims to localize objects using only
     </em>
 </p>
 
-**Motivation.** (A) The entropy value of CE loss w.r.t foreground mask and foreground activation value w.r.t foreground mask. (B) Experimental procedure and related definitions. (C) The results with statistical significance. Implementation details of the experiment and further results are available in Section 3.5.
+**Motivation.** (A) Experimental procedure and related definitions. (B) The entropy value of CE loss w.r.t foreground mask and foreground activation value w.r.t foreground mask. (C) The results with statistical significance. Implementation details of the experiment and further results are available in Section 3.5.
 
 <p align="center">
     <img src="./Img/motivation1.png" width="550"/> <br />
@@ -62,7 +62,7 @@ Weakly supervised object localization (WSOL) aims to localize objects using only
     </em>
 </p>
 
-**The architecture of the proposed BAS.** The architecture of the proposed BAS. In the training phase, the class-specific foreground prediction map Mf and the coupled background prediction map Mb are obtained by the generator according to the ground-truth class (GT), and then fed into the Activation Map Constraint module together with the feature map F.
+**The architecture of the proposed BAS.** The architecture of the proposed BAS in the training phase. The class-specific foreground prediction map Mf and the coupled background prediction map Mb are obtained by the generator according to the ground-truth class (GT), and then fed into the Activation Map Constraint module together with the feature map F.
 
 <p align="center">
     <img src="./Img/networkWSSS.png" width="500"/> <br />
