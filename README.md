@@ -177,7 +177,7 @@ On the PASCAL VOC 2012 training set. The results on the other baseline methods c
 | Our | 57.7 | [Model]( https://drive.google.com/file/d/1VkjmAFGd0cJxHMjlPE-Qjt-mRpk6xuYh/view?usp=sharing) | 
 | Our + IRN | 58.2 | [Model]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing) | 71.1 |[Model]( https://drive.google.com/file/d/1QEg9Opb6JpE0rjhJMmt0YLozO20kP1Oc/view?usp=sharing)|
 
-On the PASCAL VOC 2012 val and test sets.
+On the PASCAL VOC 2012 val and test sets (DeepLabv2).
 
 |  | Val | Test |  Weights  |
 | :-----: | :----: | :----: | :----: |
