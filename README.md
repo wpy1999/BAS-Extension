@@ -134,7 +134,7 @@ python run_sample.py
 ```
 
 ## 📊⛺ Experimental Results and Model Zoo <a name="7"></a> 
-You can download all the trained models here ([WSOL]( https://drive.google.com/drive/folders/1H8YueyBLbfVJQk8pWil-yPVejVvCe58h?usp=sharing), [WSSS]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing))
+You can download all the trained models here (WSOL [Google Drive]( https://drive.google.com/drive/folders/1H8YueyBLbfVJQk8pWil-yPVejVvCe58h?usp=sharing), [Baidu Drive]( https://pan.baidu.com/s/11kTx1tASGjUDnxRbFkYvUA?pwd=1999); WSSS [Google Drive]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing), [Baidu Drive]( https://pan.baidu.com/s/1krAEgKaEQO4geJeVMz8ZqQ?pwd=1999))
 
  or download any one individually as follows:
 
@@ -142,25 +142,25 @@ You can download all the trained models here ([WSOL]( https://drive.google.com/d
 
 |  | Top1 Loc | Top5 Loc | GT Known |  Weights  |
 | :-----: | :----: | :----: | :----: | :----: |
-| VGG | 70.90 | 85.36 | 91.04 | [Model]( https://drive.google.com/file/d/1-1SJTaUsbSRgpV_XuBeKwfefh9cc_I8r/view?usp=sharing) |
-| MobileNet | 70.54 | 86.71 | 93.04 | [Model]( https://drive.google.com/file/d/1y6U7Hhxvq8IqoRLOmnnuFFE7UUbyPvIK/view?usp=sharing) |
-| ResNet | 76.75 | 90.04 | 95.41 | [Model](https://drive.google.com/file/d/1M9rSe6nwGUMqUFz5195jpA7ddnk3EjTl/view?usp=sharing) |
-| Inception | 72.09 | 88.11 | 94.63 | [Model](https://drive.google.com/file/d/16UUx2t6Ga7f0TZZVm7e5awUOQmdE_fQj/view?usp=sharing) |
+| VGG | 70.90 | 85.36 | 91.04 | [Google Drive]( https://drive.google.com/file/d/1-1SJTaUsbSRgpV_XuBeKwfefh9cc_I8r/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/17n0uxoV-ZfX2iNZyB7fBUA?pwd=1999) |
+| MobileNet | 70.54 | 86.71 | 93.04 | [Google Drive]( https://drive.google.com/file/d/1y6U7Hhxvq8IqoRLOmnnuFFE7UUbyPvIK/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1vuCIRvtfRgvKRmOoFat5Vg?pwd=1999) |
+| ResNet | 76.75 | 90.04 | 95.41 | [Google Drive](https://drive.google.com/file/d/1M9rSe6nwGUMqUFz5195jpA7ddnk3EjTl/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1EFXuNjzZxOTtIxPqYeQngA?pwd=1999) |
+| Inception | 72.09 | 88.11 | 94.63 | [Google Drive](https://drive.google.com/file/d/16UUx2t6Ga7f0TZZVm7e5awUOQmdE_fQj/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1IE3RzvMcEuda1A8f0C5Rmw?pwd=1999) |
 
 > ILSVRC models
 
 |  | Top1 Loc | Top5 Loc | GT Known |  Weights  |
 | :-----: | :----: | :----: | :----: | :----: |
-| VGG | 52.94 | 65.38 | 69.66 | [Model]( https://drive.google.com/file/d/1lqdTmRS89vaYtld4M86LD3pzF_-7KRu8/view?usp=sharing) |
-| MobileNet | 53.05 | 66.68 | 72.03 | [Model]( https://drive.google.com/file/d/1S8Ws-vmyxInlNuRD-S7ivMYbluo8M-DL/view?usp=sharing) |
-| ResNet | 57.46 | 68.57 | 72.00 | [Model](https://drive.google.com/file/d/1CpeG6YTcU9Zj8_SbP0cRiPINztFzWC6z/view?usp=sharing) |
-| Inception | 58.50 | 69.03 | 72.07 | [Model](https://drive.google.com/file/d/1TwcP2GNSo9Lv7V9fAb-8cieQhYJ1lhll/view?usp=sharing) |
+| VGG | 52.94 | 65.38 | 69.66 | [Google Drive]( https://drive.google.com/file/d/1lqdTmRS89vaYtld4M86LD3pzF_-7KRu8/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1p9ApmaGlzsSXzfWfak-YTQ?pwd=1999) |
+| MobileNet | 53.05 | 66.68 | 72.03 | [Google Drive]( https://drive.google.com/file/d/1S8Ws-vmyxInlNuRD-S7ivMYbluo8M-DL/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1w-msn25Rnam7RIZEg3TeuQ?pwd=1999) |
+| ResNet | 57.46 | 68.57 | 72.00 | [Google Drive](https://drive.google.com/file/d/1CpeG6YTcU9Zj8_SbP0cRiPINztFzWC6z/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1DL-4fvLHet9xf4Vj9TjrJw?pwd=1999) |
+| Inception | 58.50 | 69.03 | 72.07 | [Google Drive](https://drive.google.com/file/d/1TwcP2GNSo9Lv7V9fAb-8cieQhYJ1lhll/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1zDa1BqSwZt6g0q6X0M-6RA?pwd=1999) |
 
 > OpenImages
 
 |  | PIoU | PxAP | Weights  |
 | :-----: | :----: | :----: | :----: |
-| ResNet | 50.72 | 66.86 | [Model]( https://drive.google.com/file/d/1PxDUkAPyWSL6zfez981SxODMSrESM5fh/view?usp=sharing) |
+| ResNet | 50.72 | 66.86 | [Google Drive]( https://drive.google.com/file/d/1PxDUkAPyWSL6zfez981SxODMSrESM5fh/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1mSAmXvWiy6B3tCUT83nj7Q?pwd=1999) |
 
 > PASCAL VOC models
 
@@ -168,14 +168,14 @@ On the PASCAL VOC 2012 training set. The results on the other baseline methods c
 
 |  | Seed |  Weights  | Mask |  Weights  |
 | :-----: | :----: | :----: | :----: | :----: |
-| Our | 57.7 | [Model]( https://drive.google.com/file/d/1VkjmAFGd0cJxHMjlPE-Qjt-mRpk6xuYh/view?usp=sharing) | 
-| Our + IRN | 58.2 | [Model]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing) | 71.1 |[Model]( https://drive.google.com/file/d/1QEg9Opb6JpE0rjhJMmt0YLozO20kP1Oc/view?usp=sharing)|
+| Our | 57.7 | [Google Drive]( https://drive.google.com/file/d/1VkjmAFGd0cJxHMjlPE-Qjt-mRpk6xuYh/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1T-tbtbOmy20uSrslBiNOuw?pwd=1999) | 
+| Our + IRN | 58.2 | [Google Drive]( https://drive.google.com/drive/folders/1HkggF1NpbMnMBp14tmwZJOa5jaXemgSU?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1rgoEmlVTnNHhDkn2b5dv6g?pwd=1999) | 71.1 |[Google Drive]( https://drive.google.com/file/d/1QEg9Opb6JpE0rjhJMmt0YLozO20kP1Oc/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1if2Kdq1FOSaJuXWrllZjDQ?pwd=1999)|
 
 On the PASCAL VOC 2012 val and test sets (DeepLabv2).
 
 |  | Val | Test |  Weights  |
 | :-----: | :----: | :----: | :----: |
-| Ours | 69.6 | 69.9 | [Model]( https://drive.google.com/file/d/1CzQFc04AAn8xNcTnRBV-ZkriTlbkEAKa/view?usp=sharing) |
+| Ours | 69.6 | 69.9 | [Google Drive]( https://drive.google.com/file/d/1CzQFc04AAn8xNcTnRBV-ZkriTlbkEAKa/view?usp=sharing), [Baidu Drive](https://pan.baidu.com/s/1x_47Vgk0MB-1FSl1bZaq9g?pwd=1999) |
 
 
 ## ✉️ Statement <a name="8"></a> 
