@@ -5,8 +5,8 @@ def get_hyperparameters(args, batch_flag=True):
                 'OpenImage':{'resnet':0.5}}[args.root][args.arch]
     except:  print('no alpha')
     try:
-        args.beta = {'CUB_200_2011':{'vgg':0.9, 'resnet':1.4, 'inception':1, 'mobilenet':1.9},
-            'ILSVRC':{'vgg':1, 'resnet':2.5, 'inception':2.5, 'mobilenet':1.5},
+        args.beta = {'CUB_200_2011':{'vgg':0.9, 'resnet':1.5, 'inception':1, 'mobilenet':1.9},
+            'ILSVRC':{'vgg':1, 'resnet':2, 'inception':2.5, 'mobilenet':1.5},
             'OpenImage':{'resnet':1.5}}[args.root][args.arch]   
     except:  print('no beta')
     try:
