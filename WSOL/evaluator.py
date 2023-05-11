@@ -69,7 +69,7 @@ def val_loc_one_epoch(args, Val_Loader, model, epoch=0):
                         bbox = [0, 0, args.crop_size, args.crop_size]
                     else:
                         temp = props[0]['bbox']
-                        bbox = [temp[1], temp[0], temp[3], temp[2]] ##左上和右下坐标
+                        bbox = [temp[1], temp[0], temp[3], temp[2]]  
                     ##  loc
                     max_iou = -1
                     for m in range(gt_box_num):
