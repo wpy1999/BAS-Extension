@@ -1,4 +1,4 @@
-# Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation
+# Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation (IJCV)
 
 PyTorch implementation of ''Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation''. This repository contains PyTorch training code, inference code and pretrained models. ''Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation'' is built upon our conference version ([CVPR 2022](https://arxiv.org/pdf/2112.00580.pdf)).
 
