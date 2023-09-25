@@ -25,7 +25,7 @@ PyTorch implementation of ''Background Activation Suppression for Weakly Supervi
     
     Institution: University of Science and Technology of China (USTC)
 
-* Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation (Extended Version) ([link]())
+* Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation (IJCV) ([link](https://arxiv.org/pdf/2309.12943.pdf))
 
     Authors: Wei Zhai*, Pingyu Wu*, Kai Zhu, Yang Cao, Feng Wu, Zheng-Jun Zha
 
