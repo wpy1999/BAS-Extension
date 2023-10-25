@@ -195,10 +195,12 @@ This project is for research purpose only, please contact us for the licence of 
 ```
 
 ```
-@inproceedings{wu2022background,
+@article{zhai2023background,
   title={Background Activation Suppression for Weakly Supervised Object Localization and Semantic Segmentation},
   author={Zhai, Wei and Wu, Pingyu and Zhu, Kai and Cao, Yang and Wu, Feng and Zha, Zheng-Jun},
-  booktitle={xxxx},
-  year={2022}
+  journal={International Journal of Computer Vision},
+  pages={1--26},
+  year={2023},
+  publisher={Springer}
 }
 ```
